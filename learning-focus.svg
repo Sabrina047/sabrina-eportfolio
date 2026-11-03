@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="660" viewBox="0 0 800 660" role="img" aria-labelledby="title desc">
+<title id="title">My learning design focus</title><desc id="desc">Understand learners, plan meaningful practice, offer useful feedback, and reflect and improve.</desc>
+<rect width="800" height="660" fill="#f8efdf"/>
+<g fill="#fffaf2" stroke="#d8c6b7"><rect x="36" y="44" width="342" height="264" rx="8"/><rect x="422" y="44" width="342" height="264" rx="8"/><rect x="36" y="352" width="342" height="264" rx="8"/><rect x="422" y="352" width="342" height="264" rx="8"/></g>
+<g fill="#8a6c4a" font-family="Georgia,serif" font-size="42"><text x="65" y="110">01</text><text x="451" y="110">02</text><text x="451" y="418">03</text><text x="65" y="418">04</text></g>
+<g fill="#493f3a" font-family="Arial,sans-serif" font-size="31"><text x="65" y="193">Understand</text><text x="65" y="238">learners</text><text x="451" y="193">Plan meaningful</text><text x="451" y="238">practice</text><text x="451" y="501">Offer useful</text><text x="451" y="546">feedback</text><text x="65" y="501">Reflect and</text><text x="65" y="546">improve</text></g>
+<g fill="none" stroke="#8a6c4a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M385 176 H412 l-8 -8 m8 8 l-8 8"/><path d="M593 316 V344 l-8 -8 m8 8 l8 -8"/><path d="M414 484 H386 l8 -8 m-8 8 l8 8"/><path d="M207 344 V316 l-8 8 m8 -8 l8 8"/></g></svg>

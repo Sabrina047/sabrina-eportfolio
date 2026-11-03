@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Foundation — Sabrina Lin's reflective ePortfolio in Instructional Design and Technology.">
+  <title>Foundation | Sabrina Lin ePortfolio</title>
+  <!-- 全站外观：css/style.css。直接编辑此 HTML 内的文字，无需 TXT 副本。 -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/logo-styles.css">
+</head>
+<body class="page-foundation">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- EDIT HEADER / 五页页头结构保持一致。大小和间距统一在 css/logo-styles.css 修改。
+       更换 Logo：修改 images/sl-logo.png；更改姓名文字时，五页都要同步修改。 -->
+  <header class="site-header">
+    <div class="masthead container">
+      <a class="brand brand-with-logo" href="index.html">
+        <img class="site-logo" src="images/sl-logo.png" alt="" width="80" height="80">
+        <span class="brand-copy">
+          <span class="brand-name">SABRINA LIN</span>
+          <span class="brand-note">ePortfolio</span>
+        </span>
+      </a>
+    </div>
+    <div class="nav-border">
+      <!-- 当前页的链接保留 aria-current="page"，用于显示下划线。 -->
+      <nav class="main-nav container" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="foundation.html" aria-current="page">Foundation</a>
+        <a href="design.html">Design</a>
+        <a href="research.html">Research</a>
+        <a href="technology.html">Technology</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <!-- EDIT FOUNDATION / 修改 Foundation 标题、介绍和作品。 -->
+    <header class="inner-hero">
+      <div><p class="eyebrow">01 / Understanding learning</p><h1>Foundation</h1><p class="lede">Connecting the foundations of Instructional Design and Technology with my work as a Chinese language educator.</p></div>
+      <div class="hero-art abstract-card" aria-hidden="true"><span class="art-word">Begin with why.</span></div>
+    </header>
+
+    <div class="page-layout">
+      <aside class="page-index" aria-label="Foundation sections">
+        <p class="eyebrow">On this page</p>
+        <ul><li><a href="#perspective">My perspective</a></li><li><a href="#coursework">Selected coursework</a></li><li><a href="#reflection">Connection to practice</a></li></ul>
+      </aside>
+      <div>
+        <section id="perspective" class="content-section" aria-labelledby="perspective-title">
+          <h2 id="perspective-title">My developing perspective</h2>
+          <p>I see instructional design and technology as a thoughtful process of understanding learners, planning learning experiences, and using evidence to improve them. Tools are useful when they serve a clear learning purpose.</p>
+          <p>In my Chinese classes, I want to connect learning goals with meaningful practice, useful feedback, and opportunities to try again. My studies in IDT help me explore how learning theories can guide these decisions.</p>
+          <p>This page will bring together my understanding of the field, its history, key scholars, learning theories, and my educational philosophy.</p>
+          <figure class="focus-figure">
+            <img src="images/learning-focus.svg" alt="A cycle of four learning design priorities: understand learners, plan meaningful practice, offer useful feedback, and reflect and improve." width="800" height="660" loading="lazy">
+            <figcaption>My learning design focus: begin with learners and improve through practice, feedback, and reflection.</figcaption>
+          </figure>
+        </section>
+
+        <section id="coursework" class="content-section" aria-labelledby="coursework-title">
+          <p class="eyebrow">Selected learning</p><h2 id="coursework-title">Selected coursework</h2>
+          <!-- EDIT COURSEWORK / 将自己的作业 PDF 放进 documents 后，再添加可见链接。
+               示例：<a class="button" href="documents/foundation-assignment.pdf">Read my assignment (PDF)</a>
+               链接必须在本注释结束符之后，才能显示。然后删除待添加状态并改写标题与简介。 -->
+          <article class="coursework">
+            <span class="status">Course artifact to be added</span>
+            <h3>Foundations of Instructional Design and Technology</h3>
+            <p>A completed Foundation assignment will be added here with a short explanation of what it demonstrates and why it matters to my teaching.</p>
+          </article>
+        </section>
+
+        <section id="reflection" class="content-section" aria-labelledby="reflection-title">
+          <div class="reflection">
+            <p class="eyebrow">From ideas to practice</p><h2 id="reflection-title">Connection to my practice</h2>
+            <p>My goal is to choose activities based on what students need to learn, then consider how technology can support that learning. As I add coursework, I will explain how each idea can inform my teaching and future design work.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="next-page"><p>Continue exploring my learning</p><a href="design.html">Design <span aria-hidden="true">→</span></a></div>
+  </main>
+  <!-- EDIT FOOTER / 页脚文字在这里改；字号在 style.css 的 --footer-font-size 修改。 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Sabrina Lin · Chinese language educator · IDT graduate student</p>
+      <a href="https://www.csusb.edu/instructional-technology-program">CSUSB Instructional Design &amp; Technology program</a>
+    </div>
+  </footer>
+</body>
+</html>
