@@ -1,0 +1,77 @@
+/* EDIT LOGO — 五个页面共享：Logo / 姓名 / ePortfolio / 页头留白。
+   每页 head 内必须先加载 style.css，再加载本文件。
+   请在这里修改数值，无需逐页修改，也不要在其他 CSS 再写一套 .brand 样式。 */
+   
+:root {
+  --sl-logo-size: 72px;       /* 电脑：Logo 框宽和高，保留原首页大小 */
+  --sl-logo-gap: 22px;        /* 电脑：Logo 与姓名之间的距离，保留原首页间距 */
+  --sl-name-size: 30px;      /* 电脑：SABRINA LIN 字号 */
+  --sl-note-size: 14px;      /* 电脑：ePortfolio 字号 */
+  --sl-note-gap: 8px;        /* 姓名与 ePortfolio 的上下距离 */
+  --sl-header-padding: 12px; /* 页头上下留白：收紧空白，Logo 和姓名保持原大小；五页同步 */
+}
+.site-header .masthead {
+  padding-block: var(--sl-header-padding);
+  text-align: center;
+}
+.site-header .brand-with-logo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sl-logo-gap);
+  max-width: 100%;
+  padding: 0;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.site-header .site-logo {
+  display: block;
+  width: var(--sl-logo-size);
+  height: var(--sl-logo-size);
+  max-width: none;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+.site-header .brand-copy {
+  display: block;
+  min-width: 0;
+  text-align: center; /* 姓名和副标题各自居中；Logo 仍在左侧 */
+}
+.site-header .brand-name {
+  display: block;
+  font-family: var(--serif);
+  font-size: var(--sl-name-size);
+  font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.site-header .brand-note {
+  display: block;
+  margin-top: var(--sl-note-gap);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: var(--sl-note-size);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+/* EDIT LOGO MOBILE — 手机宽度不超过 600px 时，使用下面这组数值。
+   若只想调整手机显示，请改这里，不要改上面的电脑设置。 */
+@media (max-width: 600px) {
+  :root {
+    --sl-logo-size: 56px;
+    --sl-logo-gap: 10px;
+    --sl-name-size: 26px;
+    --sl-note-size: 14px;
+    --sl-header-padding: 14px;
+  }
+  .site-header .brand-name, .site-header .brand-note { letter-spacing: 1px; }
+}
+/* 很窄的手机保留 Logo 在左、姓名一行，不影响上面大屏幕的设定。 */
+@media (max-width: 360px) {
+  :root { --sl-logo-size: 48px; --sl-logo-gap: 8px; --sl-name-size: 24px; }
+}
